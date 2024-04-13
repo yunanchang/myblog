@@ -17,4 +17,9 @@ class Book extends Model
         'price',
         'available'
     ];
+
+
+    public function store(){
+        return $this->belongsTo('APP\Models\Store');
+    }
 }
