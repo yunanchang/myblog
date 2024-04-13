@@ -20,6 +20,10 @@ class Book extends Model
 
 
     public function store(){
-        return $this->belongsTo('APP\Models\Store');
+        return $this->belongsTo('App\Models\Store');
+    }
+
+    public function authors(){
+        return $this->belongsToMany('App\Models\Author');
     }
 }
