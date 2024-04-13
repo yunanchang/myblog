@@ -17,6 +17,8 @@ return new class extends Migration
             $table->integer('author_id')->nullable();
             $table->timestamps();
         });
+
+        
     }
 
     /**
