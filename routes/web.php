@@ -8,9 +8,9 @@ use App\Http\Controllers\PostsControllerController;
 use App\Http\Controllers\ArticlesController;
 use App\Models\Article;
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/lo', function () {
+    return view('welcome');
+});
 
 Route::get('/',[ArticlesController::class,'index'])->name('root');
 
